@@ -1,0 +1,49 @@
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px ;
+    margin-bottom: 100px;
+    margin-left:100px;
+    padding-left:50px;
+}
+.order-top{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.order-top .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.order-top input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 4px;
+    outline-color: #b68f5f;
+}
+.order-top .multi-field{
+    display: flex;
+    gap: 10px;
+}
+.order-bottom{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.order-submit{
+    margin-top: 50px;
+    border: none;
+    background-color: beige;
+    color: #b68f5f;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .place-order{
+        flex-direction: column;
+    }
+}

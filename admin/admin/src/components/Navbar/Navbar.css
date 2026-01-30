@@ -1,0 +1,13 @@
+.navbar{
+    padding:8px 4%;
+    position:relative;
+   height: 100px;
+}
+.navbar .logo{
+    width:300px;
+    left: 25px;
+    height: 80px;
+    position :absolute;
+    top:20px;
+    
+}

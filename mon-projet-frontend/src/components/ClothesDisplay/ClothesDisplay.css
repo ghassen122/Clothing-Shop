@@ -1,0 +1,105 @@
+.clothes-display {
+    margin-top:30px ;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 80px;;
+    padding:20px 20px;
+
+
+}
+.clothes-display h2 {
+    font-size: 24px;
+    font-weight:600;
+}
+.clothes-display-list {
+
+ display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+ margin-top: 30px;
+ gap:30px;
+ row-gap: 50px;
+}
+.clothes-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    background-color:white;
+    height:430px;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+  
+    gap: 5px;
+    
+}
+.clothes-item .img{
+    
+    height:340px;
+    border-radius: 15px 15px 0px 0px;
+    /*transition: 0.5s;
+    cursor: pointer;
+*/
+  
+    
+}
+.clothes-item .img:hover{
+   transform:scale(1.05) ; 
+      
+
+    
+    
+
+    
+}
+.clothes-item h3,p {
+    color:#b68f5f;
+    margin-left: 5px;
+    
+
+}
+.clothes-item .flex-price-button .add{
+
+  padding-top: 12px; 
+  padding-left:5px;
+  margin-left:5px;
+  margin-right: 10px;
+  margin-bottom: 10px;     /* taille du bouton */
+  background-color:beige ;
+  color: #b68f5f;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  height:40px;
+  width:130px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+ 
+    
+}
+
+
+.imag {
+  width: 25px;
+  height: 18px;
+  margin-left: 0px;
+  padding-left: 0px;
+  gap: 20px;
+}
+.clothes-item .flex-price-button .add p{
+    padding-right: 0px;
+    margin-right: 0px;
+    
+}
+
+.clothes-item .flex-price-button{
+
+    display: flex;      
+
+  justify-content: space-between;
+  gap: 10px;
+    
+}
