@@ -4,7 +4,7 @@ import axios from "axios";
 export const ClothesContext=createContext(null);
 const ClothesContextProvider =(props) =>{
 
-   const url = "http://localhost:4000";
+   const url = "https://clothing-shop-backend-rq3l.onrender.com";
    const [token, setToken] = useState("");
    const [Clothes_list, setClothesList] = useState([]);
    const [cartItems, setCartItems] = useState({});
