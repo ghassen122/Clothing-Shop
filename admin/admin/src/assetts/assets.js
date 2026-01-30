@@ -23,7 +23,7 @@ import image22 from './image22.jpg'
 import image23 from './image23.jpg'
 //import image24 from './image24.jpg'
 //import image25 from'./image25.jpg'
-export const url = 'http://localhost:4000'
+export const url = 'https://clothing-shop-backend-rq3l.onrender.com'
 export const currency = '$'
 export const clothesList= [
     {
