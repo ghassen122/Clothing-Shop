@@ -4,6 +4,7 @@ import headerimage from  '../../assets/header-image.png'
 import { ClothesContext } from '../../context/context';
 import axios from 'axios';
 import { toast } from 'react-toastify'
+import { useNavigate } from "react-router-dom";
 export const Login = () => {
     const [currState,setCurrState]=useState("Sign Up");
      const {setToken, url} = useContext(ClothesContext);
@@ -12,6 +13,8 @@ export const Login = () => {
         email: "",
         password: ""
     })
+    
+        const navigate = useNavigate();
 
     const onChangeHandler = (event) => {
         const name = event.target.name
@@ -30,14 +33,14 @@ export const Login = () => {
             new_url += "/api/user/register"
         }
 
-
        const response = await axios.post(new_url, data);
         if (response.data.success) {
           toast.success(response.data.message)
             setToken(response.data.token)
             localStorage.setItem("token", response.data.token)
-            // important for review loadCartData({token:response.data.token})
-            // review setShowLogin(false)
+             if (currState === "Login") {
+                      navigate("/");
+                        }
         }
         else {
             toast.error(response.data.message)

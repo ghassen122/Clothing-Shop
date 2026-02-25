@@ -3,7 +3,7 @@ import './Categories.css'
 
 const Categories = ({ selectedCategory, onCategoryChange }) => {
   return (
-    <div className="categories">
+    <div className="categories" id="categories">
       <h2>choose a category</h2>
       <p> </p>
       <select
